@@ -23,12 +23,17 @@ executable routes
   other-extensions:    QuasiQuotes
   build-depends:       base >=4.7 && <4.8
                      , template-haskell >=2.9 && <2.10
-                     , servant == 0.2
-                     , servant-client
+                     , bytestring
+                     , servant == 0.4.*
+                     , servant-server == 0.4.*
+                     , servant-client == 0.4.*
+                     , http-media
+                     , text
                      , criterion
                      , either
                      , interpolate
                      , random
+                     , split
                      , tagged
                      , transformers
                      , wai
