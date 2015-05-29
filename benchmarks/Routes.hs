@@ -15,6 +15,7 @@ import Network.Wai.Handler.Warp
 import Servant.API
 import Servant.Server
 
+import Routes.RoutesTH
 
 main :: IO ()
 main = run 8010 $ serve api server
